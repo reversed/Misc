@@ -23,6 +23,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
     
     tmp = *t1;
     *t1 = (*t1)->next;
+    free(tmp);
     return head;
 }
 
